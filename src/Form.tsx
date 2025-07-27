@@ -5,8 +5,12 @@ import './styles/form.css'
 import type { FC } from 'react';
 import type { FormProps, LettersGroup, SetColFn } from './types'
 
+const MAX_COLUMNS = 8
+
 export const Form: FC<FormProps> = ({ setLetters }) => {
-  const [draft, setDraft] = useState<LettersGroup>(Array.from({ length: 8 }, () => []))
+  const [draft, setDraft] = useState<LettersGroup>(
+    Array.from({ length: MAX_COLUMNS }, () => [])
+  )
 
   const setCol: SetColFn = useCallback((index, value) => {
     setDraft(oldValue => {

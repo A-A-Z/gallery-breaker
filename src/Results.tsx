@@ -5,7 +5,6 @@ import './styles/results.css'
 import type { FC } from 'react';
 import type { ResultsProps, MatchesGroups } from './types'
 
-
 const MIN_LETTERS = 5
 
 export const Results: FC<ResultsProps> = ({ letters }) => {
