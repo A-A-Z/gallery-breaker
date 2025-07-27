@@ -1,0 +1,27 @@
+.match-letter {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.match-letter__item {
+  border-top: 1px solid #666;
+}
+
+.match-letter__title {
+  padding: 1rem 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.match-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.match-group__item {
+  min-width: 9ch;
+}
